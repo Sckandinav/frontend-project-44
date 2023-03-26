@@ -5,7 +5,11 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const makeRound = () => {
   const question = getRandomInt(0, 101);
   let correctAnswer;
-  question % 2 === 0 ? correctAnswer = 'yes' : correctAnswer = 'no';
+  if (question % 2 === 0) {
+    correctAnswer = 'yes';
+  } else {
+    correctAnswer = 'no';
+  }
   return [question, correctAnswer];
 };
 

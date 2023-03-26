@@ -15,7 +15,12 @@ const isPrimeNumber = (number) => {
     151, 157, 163, 167, 173,
     179, 181, 191, 193, 197,
     199];
-  primeNumbersList.includes(number) ? correctAnswer = 'yes' : correctAnswer = 'no';
+  if (primeNumbersList.includes(number)) {
+    correctAnswer = 'yes';
+  } else {
+    correctAnswer = 'no';
+  }
+
   return correctAnswer;
 };
 
