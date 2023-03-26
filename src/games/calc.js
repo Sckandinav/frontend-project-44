@@ -1,4 +1,5 @@
 import basisOfTheGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const description = 'What is the result of the expression?';
 const mathematicalOperations = ['+', '-', '*'];
@@ -16,9 +17,9 @@ const calculate = (x, y, operation) => {
   }
 };
 const makeRound = () => {
-  const number1 = Math.floor(Math.random() * 101);
-  const number2 = Math.floor(Math.random() * number1);
-  const operator = mathematicalOperations[Math.floor(Math.random() * 3)];
+  const number1 = getRandomInt(0, 101);
+  const number2 = getRandomInt(0, number1);
+  const operator = mathematicalOperations[getRandomInt(0, 3)];
   const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = calculate(number1, number2, operator).toString();
   return [question, correctAnswer];

@@ -1,4 +1,5 @@
 import basisOfTheGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -19,8 +20,8 @@ const NOD = (a, b) => {
 };
 
 const makeRound = () => {
-  const number1 = Math.floor(Math.random() * 101);
-  const number2 = Math.floor(Math.random() * 101);
+  const number1 = getRandomInt(0, 101);
+  const number2 = getRandomInt(0, 101);
   const question = `${number1} ${number2}`;
   const correctAnswer = NOD(number1, number2).toString();
   return [question, correctAnswer];
