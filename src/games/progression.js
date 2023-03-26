@@ -15,7 +15,7 @@ const progression = (firstNumber, arrLenght, incrementNumber, questionPosition) 
       startNumber += incrementNumber;
     }
   }
-  return rezult;
+  return rezult.join(' ');
 };
 
 const makeRound = () => {
