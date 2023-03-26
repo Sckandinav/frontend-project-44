@@ -3,10 +3,6 @@
 
 <a href="https://codeclimate.com/github/Sckandinav/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/a1362095d45839ae24ea/maintainability" /></a>
 
-https://asciinema.org/a/570210
-
 <a href="https://asciinema.org/a/aTyGf0TaquRCVO3aPpQ2gsDIz" target="_blank"><img src="https://asciinema.org/a/aTyGf0TaquRCVO3aPpQ2gsDIz.svg" /></a>
 
-[![asciicast](https://asciinema.org/a/aTyGf0TaquRCVO3aPpQ2gsDIz.svg)](https://asciinema.org/a/aTyGf0TaquRCVO3aPpQ2gsDIz)
-
-<script async id="asciicast-aTyGf0TaquRCVO3aPpQ2gsDIz" src="https://asciinema.org/a/aTyGf0TaquRCVO3aPpQ2gsDIz.js"></script>
+<a href="https://asciinema.org/a/570210" target="_blank"><img src="https://asciinema.org/a/570210.svg" /></a>
