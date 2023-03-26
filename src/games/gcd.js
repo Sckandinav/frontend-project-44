@@ -22,7 +22,7 @@ const NOD = (a, b) => {
 const makeRound = () => {
   const number1 = getRandomInt(0, 101);
   const number2 = getRandomInt(0, 101);
-  const question = `${number1} ${number2}`;
+  const question = `Question: ${number1} ${number2}`;
   const correctAnswer = NOD(number1, number2).toString();
   return [question, correctAnswer];
 };
