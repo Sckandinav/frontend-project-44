@@ -1,4 +1,4 @@
-import run from '../index.js';
+import basisOfTheGame from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const makeRound = () => {
@@ -9,5 +9,5 @@ const makeRound = () => {
 };
 
 export default () => {
-  run(description, makeRound);
+  basisOfTheGame(description, makeRound);
 };
