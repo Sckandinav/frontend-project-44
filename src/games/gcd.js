@@ -1,19 +1,19 @@
 import basisOfTheGame from '../index.js';
-import getRandomInt from '../randomNumber.js';
+import { getRandomInt } from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const NOD = (a, b) => {
-  let x = a;
-  let y = b;
+const findNOD = (a, b) => {
+  let firstNumber = a;
+  let secondNumber = b;
   let rezult;
-  while (x !== y) {
-    if (x > y) {
-      x -= y;
-      rezult = x;
+  while (firstNumber !== secondNumber) {
+    if (firstNumber > secondNumber) {
+      firstNumber -= secondNumber;
+      rezult = firstNumber;
     } else {
-      y -= x;
-      rezult = y;
+      secondNumber -= firstNumber;
+      rezult = secondNumber;
     }
   }
   return rezult;
@@ -23,7 +23,7 @@ const makeRound = () => {
   const number1 = getRandomInt(0, 101);
   const number2 = getRandomInt(0, 101);
   const question = `Question: ${number1} ${number2}`;
-  const correctAnswer = NOD(number1, number2).toString();
+  const correctAnswer = findNOD(number1, number2).toString();
   return [question, correctAnswer];
 };
 
