@@ -15,7 +15,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "author": "",
+  "author": "Vasiliy Balov",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.36.0"
