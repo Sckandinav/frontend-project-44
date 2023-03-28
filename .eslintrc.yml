@@ -11,7 +11,5 @@ rules: {
   import/extensions: 0,
   no-var: "error",
   quotes: ["error", "single"],
-  semi: ["error", "always"],
-  no-unused-expressions: ["error", { "allowTernary": true }],
-  
+  semi: ["error", "always"]
 }

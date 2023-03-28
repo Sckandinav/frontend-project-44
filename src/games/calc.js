@@ -1,5 +1,5 @@
 import basisOfTheGame from '../index.js';
-import { getRandomInt } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const mathematicalOperations = ['+', '-', '*'];
@@ -13,7 +13,7 @@ const calculate = (x, y, operation) => {
     case '*':
       return x * y;
     default:
-      return console.log(`Сheck yours operation '${operation}'!`);
+      throw new Error(`Сheck yours operation '${operation}'!`);
   }
 };
 const makeRound = () => {

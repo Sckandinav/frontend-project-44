@@ -1,21 +1,21 @@
 import basisOfTheGame from '../index.js';
-import { getRandomInt } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
 const getProgression = (firstNumber, arrLenght, incrementNumber, questionPosition) => {
-  const rezult = [];
+  const result = [];
   let startNumber = firstNumber;
   for (let i = 0; i < arrLenght; i += 1) {
     if (i === questionPosition) {
-      rezult.push('..');
+      result.push('..');
       startNumber += incrementNumber;
     } else {
-      rezult.push(startNumber);
+      result.push(startNumber);
       startNumber += incrementNumber;
     }
   }
-  return rezult.join(' ');
+  return result.join(' ');
 };
 
 const makeRound = () => {

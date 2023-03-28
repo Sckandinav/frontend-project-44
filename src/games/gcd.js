@@ -1,29 +1,29 @@
 import basisOfTheGame from '../index.js';
-import { getRandomInt } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const searchingGreatestCommonDivisor = (a, b) => {
+const getGcd = (a, b) => {
   let firstNumber = a;
   let secondNumber = b;
-  let rezult;
+  let result;
   while (firstNumber !== secondNumber) {
     if (firstNumber > secondNumber) {
       firstNumber -= secondNumber;
-      rezult = firstNumber;
+      result = firstNumber;
     } else {
       secondNumber -= firstNumber;
-      rezult = secondNumber;
+      result = secondNumber;
     }
   }
-  return rezult;
+  return result;
 };
 
 const makeRound = () => {
   const number1 = getRandomInt(0, 101);
   const number2 = getRandomInt(0, 101);
   const question = `Question: ${number1} ${number2}`;
-  const correctAnswer = searchingGreatestCommonDivisor(number1, number2).toString();
+  const correctAnswer = getGcd(number1, number2).toString();
   return [question, correctAnswer];
 };
 
