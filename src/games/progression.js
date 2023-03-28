@@ -3,7 +3,7 @@ import { getRandomInt } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
-const progression = (firstNumber, arrLenght, incrementNumber, questionPosition) => {
+const getProgression = (firstNumber, arrLenght, incrementNumber, questionPosition) => {
   const rezult = [];
   let startNumber = firstNumber;
   for (let i = 0; i < arrLenght; i += 1) {
@@ -23,7 +23,7 @@ const makeRound = () => {
   const questionPosition = getRandomInt(0, arrLenght);
   const firstNumber = getRandomInt(1, 100);
   const incrementNumber = getRandomInt(1, 20);
-  const question = progression(firstNumber, arrLenght, incrementNumber, questionPosition);
+  const question = getProgression(firstNumber, arrLenght, incrementNumber, questionPosition);
   const correctAnswer = (questionPosition * incrementNumber + firstNumber).toString();
   return [question, correctAnswer];
 };
